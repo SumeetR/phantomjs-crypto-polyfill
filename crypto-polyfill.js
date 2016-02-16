@@ -7,4 +7,7 @@ if (window && window.crypto) {
 	window.crypto.getRandomValues = function getRandomValues(array) {
 	    return array;
 	}
+	window.crypto.subtle = {
+    		decrypt: function (data) {}
+	}
 }
